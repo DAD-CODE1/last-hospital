@@ -1,0 +1,381 @@
+
+.btn {
+    font-weight: 700;
+    transition: .5s;
+  }
+  
+  .btn:hover {
+    -webkit-box-shadow: 0 8px 6px -6px #555555;
+    -moz-box-shadow: 0 8px 6px -6px #555555;
+    box-shadow: 0 8px 6px -6px #555555;
+  }
+  
+  .btn-primary {
+    color: #FFFFFF;
+  }
+  
+  .btn-square {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .btn-sm-square {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .btn-lg-square {
+    width: 46px;
+    height: 46px;
+  }
+  
+  .btn-square,
+  .btn-sm-square,
+  .btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  
+  .back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+    z-index: 99;
+  }
+  /*-------------------------------------
+          1. all nav 
+  --------------------------------------*/
+  /* Topbar Styles */
+  
+  .topbar {
+    background-color: #ffffff; 
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  
+  .topbar a {
+    color: gray; 
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+  
+  .topbar a:hover {
+    color: #0B5ED7; 
+  }
+  
+  .topbar .text-body {
+    color: #333;
+  }
+  
+  .topbar .icon {
+    color: gray; 
+  }
+  .topbar .icon:hover {
+    color: #0B5ED7; 
+  }
+  
+  @media (max-width: 576px) {
+    .topbar {
+      text-align: center; 
+    }
+    
+    .topbar .d-inline-flex {
+      justify-content: center; 
+    }
+  }
+  /* navbar Styles */
+  .navbar {
+    border-bottom: solid 1px #0B5ED7;
+    padding: 10px 0; 
+     
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); 
+  }
+  
+  
+  .navbar-light .navbar-nav .nav-link {
+    font-family: 'Jost', sans-serif;
+    position: relative;
+    margin-left: 30px;
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    outline: none;
+    transition: .5s;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-nav .nav-link.active {
+    color: #0B5ED7;
+  }
+  
+  @media (min-width: 992px) {
+    .navbar-light .navbar-nav .nav-link::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 5px;
+        bottom: 0;
+        left: 50%;
+        background:#0B5ED7;
+        transition: .5s;
+    }
+  
+    .navbar-light .navbar-nav .nav-link:hover::before,
+    .navbar-light .navbar-nav .nav-link.active::before {
+        width: 100%;
+        left: 0;
+    }
+  }
+  
+  @media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link  {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+  }
+  @media (max-width: 576px){
+    .navbar-light .navbar-nav .nav-link{
+      margin-right:30px;
+    }
+    .navbar-light .navbar-nav .nav-link:hover{
+      margin-right:40px;
+    }
+  }
+  
+  
+  /*-------------------------------------
+          end all nav 
+  --------------------------------------*/
+  
+  /*-------------------------------------
+          start footer
+  --------------------------------------*/
+  
+  .gorigt{
+    margin-left:5px;
+  }
+  @media (max-width: 768px) {
+    .container-fluid {
+      text-align: center; /* Center all text in the footer on mobile */
+    }
+  
+    .btn {
+      margin-right: 5px; /* Adjust margin between buttons if needed */
+    }
+  
+  }
+  .gorigt:hover{
+    margin-left:10px;
+  }
+  .groww:hover{
+    font-size:1.2rem;
+  }  
+  .groww{
+    text-decoration:none;
+  }
+  /*-------------------------------------
+          end footer
+  --------------------------------------*/
+   /*-------------------------------------
+          start hero
+  --------------------------------------*/
+  .hero-header {
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+      url(../images/hero.jpg) top right no-repeat; 
+    background-size: cover;
+  }
+   /*-------------------------------------
+          end hero
+  --------------------------------------*/
+  /*-------------------------------------
+          start services
+  --------------------------------------*/
+
+  .service-item {
+    position: relative;
+    height: 350px;
+    padding: 0 30px;
+    transition: .5s;
+}
+
+.service-item .service-icon {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0B5ED7;
+    border-radius: 50%;
+    transform: rotate(-14deg);
+}
+
+.service-item .service-icon i {
+    transform: rotate(15deg);
+}
+
+.service-item a.btn {
+    position: absolute;
+    width: 60px;
+    bottom: -48px;
+    left: 50%;
+    margin-left: -30px;
+    opacity: 0;
+}
+
+.service-item:hover a.btn {
+    bottom: -24px;
+    opacity: 1;
+}
+
+  /*-------------------------------------
+          end services
+  --------------------------------------*/
+
+  /*-------------------------------------
+          start  rooms
+  --------------------------------------*/
+
+  .carousel-item {
+    height: 60vh; /* Full height */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text visibility */
+    color: white; /* White text */
+}
+.first {
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+      url(../images/nose.png) top right no-repeat; 
+    background-size: cover;
+  }
+  .second {
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+      url(../images/women.png) top right no-repeat; 
+    background-size: cover;
+  }
+  .third {
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+      url(../images/royal.png) top right no-repeat; 
+    background-size: cover;
+  }
+  .fourth {
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+      url(../images/procces.png) top right no-repeat; 
+    background-size: cover;
+  }
+  .fifth {
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+      url(../images/life.png) top right no-repeat; 
+    background-size: cover;
+  }
+  .sixth {
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+      url(../images/eae.png) top right no-repeat; 
+    background-size: cover;
+  }
+  .seven {
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+      url(../images/doupl.png) top right no-repeat; 
+    background-size: cover;
+  }
+  .eaght {
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+      url(../images/child.png) top right no-repeat; 
+    background-size: cover;
+  }
+  .nine {
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+      url(../images/care.png) top right no-repeat; 
+    background-size: cover;
+  }
+  .ten {
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+      url(../images/asnan.png) top right no-repeat; 
+    background-size: cover;
+  }
+  .eleven {
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+      url(../images/altwa.png) top right no-repeat; 
+    background-size: cover;
+  }
+  .twelf {
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+      url(../images/almaml.png) top right no-repeat; 
+    background-size: cover;
+  }
+  .thr {
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+      url(../images/afaka.png) top right no-repeat; 
+    background-size: cover;
+  }
+    /*-------------------------------------
+          end rooms
+  --------------------------------------*/
+      /*-------------------------------------
+          start vid
+  --------------------------------------*/
+  .video-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    width: 100%; /* تأكد من أن العرض 100% */
+}
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* تأكد من أن العرض 100% */
+    height: 100%; /* تأكد من أن الارتفاع 100% */
+}
+
+    /*-------------------------------------
+          end vid
+  --------------------------------------*/
+
+
+
+
+    /*-------------------------------------
+          start news
+  --------------------------------------*/
+  .carousel-item {
+    height: 400px; /* ارتفاع ثابت للسلايدر */
+}
+.card {
+    flex: 1; /* ملء المساحة */
+    margin: 10px; /* إضافة مسافة بين الكاردات */
+}
+iframe {
+    width: 100%; /* ملء عرض الكارد */
+    height: 250px; /* ارتفاع ثابت للفيديو */
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* خلفية لتوضيح الأسهم */
+}
+    /*-------------------------------------
+          end news
+  --------------------------------------*/
